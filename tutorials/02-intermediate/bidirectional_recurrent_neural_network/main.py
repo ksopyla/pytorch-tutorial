@@ -18,12 +18,12 @@ num_epochs = 2
 learning_rate = 0.003
 
 # MNIST dataset
-train_dataset = torchvision.datasets.MNIST(root='../../data/',
+train_dataset = torchvision.datasets.MNIST(root='./data/',
                                            train=True, 
                                            transform=transforms.ToTensor(),
                                            download=True)
 
-test_dataset = torchvision.datasets.MNIST(root='../../data/',
+test_dataset = torchvision.datasets.MNIST(root='./data/',
                                           train=False, 
                                           transform=transforms.ToTensor())
 
